@@ -115,5 +115,13 @@ INSERT INTO direccion(
 
 
 ```sql
-
+INSERT INTO producto(
+    id_producto,
+    nombre,
+    tipo_producto,
+    presentacion,
+    precio,
+    stock
+) VALUES
+(1, 'Pizza Hawaiana', 'Pizza', 'Grande', '76.000', 35);
 ```

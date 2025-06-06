@@ -16,4 +16,12 @@ INSERT INTO direccion(
 ) VALUES
 (1, 1, '34a', '17', '#31-78', 'La Paz', 'Bucaramanga');
 
-INSERT INTO producto
+INSERT INTO producto(
+    id_producto,
+    nombre,
+    tipo_producto,
+    presentacion,
+    precio,
+    stock
+) VALUES
+(1, 'Pizza Hawaiana', 'Pizza', 'Grande', '76.000', 35);

@@ -15,3 +15,5 @@ INSERT INTO direccion(
     ciudad
 ) VALUES
 (1, 1, '34a', '17', '#31-78', 'La Paz', 'Bucaramanga');
+
+INSERT INTO producto

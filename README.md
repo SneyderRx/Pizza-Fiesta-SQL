@@ -48,16 +48,6 @@ CREATE TABLE `detalles_pedido` (
     PRIMARY KEY (`id_detalle`)
 );
 
-CREATE TABLE `pizzas` (
-    `id_pizza` INTEGER NOT NULL,
-    `tamaño` INTEGER NOT NULL
-);
-
-CREATE TABLE `bebidas` (
-    `id_bebida` INTEGER NOT NULL,
-    `Column1` INTEGER NOT NULL
-);
-
 CREATE TABLE `ingredientes` (
     `id_ingrediente` INTEGER(3) NOT NULL,
     `nombre` VARCHAR(20) NOT NULL,
@@ -119,4 +109,11 @@ INSERT INTO direccion(
     ciudad
 ) VALUES
 (1, 1, '34a', '17', '#31-78', 'La Paz', 'Bucaramanga');
+```
+
+2. **Agregar un nuevo producto (pizza) al menú:**
+
+
+```sql
+
 ```

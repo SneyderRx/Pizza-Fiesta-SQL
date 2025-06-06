@@ -5,8 +5,6 @@ DROP TABLE IF EXISTS `clientes`;
 DROP TABLE IF EXISTS `direccion`;
 DROP TABLE IF EXISTS `pedidos`;
 DROP TABLE IF EXISTS `detalles_pedido`;
-DROP TABLE IF EXISTS `pizzas`;
-DROP TABLE IF EXISTS `bebidas`;
 DROP TABLE IF EXISTS `ingredientes`;
 DROP TABLE IF EXISTS `combos`;
 DROP TABLE IF EXISTS `producto`;
@@ -22,11 +20,11 @@ CREATE TABLE `clientes` (
 CREATE TABLE `direccion` (
     `id_direccion` INTEGER(3) NOT NULL,
     `id_cliente` INTEGER(3) NOT NULL,
-    `calle` INTEGER NOT NULL,
+    `calle` VARCHAR(15) NOT NULL,
     `carrera` INTEGER NOT NULL,
-    `nomenclatura` INTEGER NOT NULL,
-    `barrio` INTEGER NOT NULL,
-    `ciudad` INTEGER NOT NULL,
+    `nomenclatura` VARCHAR(15) NOT NULL,
+    `barrio` VARCHAR(15) NOT NULL,
+    `ciudad` VARCHAR(15) NOT NULL,
     PRIMARY KEY (`id_direccion`)
 );
 
@@ -49,16 +47,6 @@ CREATE TABLE `detalles_pedido` (
     `cantidad` INTEGER(2) NOT NULL,
     `precio_unitario` INTEGER NOT NULL,
     PRIMARY KEY (`id_detalle`)
-);
-
-CREATE TABLE `pizzas` (
-    `id_pizza` INTEGER NOT NULL,
-    `tamaño` INTEGER NOT NULL
-);
-
-CREATE TABLE `bebidas` (
-    `id_bebida` INTEGER NOT NULL,
-    `Column1` INTEGER NOT NULL
 );
 
 CREATE TABLE `ingredientes` (

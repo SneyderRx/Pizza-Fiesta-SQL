@@ -7,6 +7,8 @@
 
 - Estructura de las tablas para crearlas en MySQL
 
+
+```sql
 CREATE TABLE `clientes` (
     `id_cliente` INTEGER(3) NOT NULL,
     `nombre` VARCHAR(60) NOT NULL,
@@ -17,11 +19,11 @@ CREATE TABLE `clientes` (
 CREATE TABLE `direccion` (
     `id_direccion` INTEGER(3) NOT NULL,
     `id_cliente` INTEGER(3) NOT NULL,
-    `calle` INTEGER NOT NULL,
+    `calle` VARCHAR(15) NOT NULL,
     `carrera` INTEGER NOT NULL,
-    `nomenclatura` INTEGER NOT NULL,
-    `barrio` INTEGER NOT NULL,
-    `ciudad` INTEGER NOT NULL,
+    `nomenclatura` VARCHAR(15) NOT NULL,
+    `barrio` VARCHAR(15) NOT NULL,
+    `ciudad` VARCHAR(15) NOT NULL,
     PRIMARY KEY (`id_direccion`)
 );
 
@@ -92,3 +94,20 @@ ALTER TABLE `detalles_pedido` ADD FOREIGN KEY (`id_pedido`) REFERENCES `pedidos`
 ALTER TABLE `detalles_pedido` ADD FOREIGN KEY (`id_producto`) REFERENCES `producto`(`id_producto`);
 ALTER TABLE `detalles_pedido` ADD FOREIGN KEY (`id_ingrediente`) REFERENCES `ingredientes`(`id_ingrediente`);
 ALTER TABLE `detalles_pedido` ADD FOREIGN KEY (`id_combo`) REFERENCES `combos`(`id_combo`);
+```
+
+# Consultas
+
+1. **Registrar un nuevo cliente:**
+
+
+```sql
+INSERT INTO clientes(
+    id_cliente,
+    nombre,
+    telefono
+) VALUES
+(1, 'Ana Perez', 301256482);
+
+
+```

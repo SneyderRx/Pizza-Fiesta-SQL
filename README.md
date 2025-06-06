@@ -125,3 +125,18 @@ INSERT INTO producto(
 ) VALUES
 (1, 'Pizza Hawaiana', 'Pizza', 'Grande', '76.000', 35);
 ```
+
+3. **Registrar una bebida en el menú:**
+
+
+```sql
+INSERT INTO producto(
+    id_producto,
+    nombre,
+    tipo_producto,
+    presentacion,
+    precio,
+    stock
+) VALUES
+(2, 'Coca Cola', 'Bebida', 'Pequeña', '1.500', 50);
+```

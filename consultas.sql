@@ -25,3 +25,13 @@ INSERT INTO producto(
     stock
 ) VALUES
 (1, 'Pizza Hawaiana', 'Pizza', 'Grande', '76.000', 35);
+
+INSERT INTO producto(
+    id_producto,
+    nombre,
+    tipo_producto,
+    presentacion,
+    precio,
+    stock
+) VALUES
+(2, 'Coca Cola', 'Bebida', 'Pequeña', '1.500', 50);

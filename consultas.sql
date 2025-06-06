@@ -35,3 +35,12 @@ INSERT INTO producto(
     stock
 ) VALUES
 (2, 'Coca Cola', 'Bebida', 'Pequeña', '1.500', 50);
+
+INSERT INTO ingredientes(
+    id_ingrediente,
+    nombre,
+    cantidad_porciones,
+    precio_porcion,
+    stock
+) VALUES
+(1, 'Aceitunas', 14, 1.800, 28);

@@ -140,3 +140,17 @@ INSERT INTO producto(
 ) VALUES
 (2, 'Coca Cola', 'Bebida', 'Pequeña', '1.500', 50);
 ```
+
+4. **Agregar un ingrediente a la base de datos:**
+
+
+```sql
+INSERT INTO ingredientes(
+    id_ingrediente,
+    nombre,
+    cantidad_porciones,
+    precio_porcion,
+    stock
+) VALUES
+(1, 'Aceitunas', 14, 1.800, 28);
+```

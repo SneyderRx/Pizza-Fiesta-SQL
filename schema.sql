@@ -1,11 +1,16 @@
-# Pizza Fiesta
-
-### Diagrama ER
-![alt text](image.png)
-
-### Tablas
-
-- Estructura de las tablas para crearlas en MySQL
+CREATE DATABASE sql_exam
+    DEFAULT CHARACTER SET = 'utf8mb4';
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS `clientes`;
+DROP TABLE IF EXISTS `direccion`;
+DROP TABLE IF EXISTS `pedidos`;
+DROP TABLE IF EXISTS `detalles_pedido`;
+DROP TABLE IF EXISTS `pizzas`;
+DROP TABLE IF EXISTS `bebidas`;
+DROP TABLE IF EXISTS `ingredientes`;
+DROP TABLE IF EXISTS `combos`;
+DROP TABLE IF EXISTS `producto`;
+SET FOREIGN_KEY_CHECKS = 1;
 
 CREATE TABLE `clientes` (
     `id_cliente` INTEGER(3) NOT NULL,
